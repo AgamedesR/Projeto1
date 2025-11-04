@@ -2,10 +2,13 @@
 # Aluno: Agamedes Rodrigues Meira de Castro Gomes
 # RGM: 42834996
 
+# Intrução: para cessar o banco de dados é só seguir a url -> http://localhost/Projeto1/admin/index.php
+
+# Projeto explicado na sua documentação.
+
 # Tabelas do Phpmyadmin
 # Clientes (criada em sala)
-
-# Categorias
+# Categorias (Tema Escolhido)
 CREATE TABLE categorias (
   id INT AUTO_INCREMENT PRIMARY KEY,
   bairro VARCHAR(100) NOT NULL,

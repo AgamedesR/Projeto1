@@ -1,0 +1,47 @@
+/* ===== ESTILO GERAL ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===== SEÇÃO QUEM SOMOS ===== */
+.quem-somos {
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.quem-somos h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.quem-somos p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+

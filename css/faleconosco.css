@@ -1,0 +1,89 @@
+/* GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BLOCO / CARD */
+
+.container-fale{
+    width: 100%;
+    max-width: 500px;
+    margin: 80px auto; 
+    background: #3b3b3b; 
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+}
+
+.container-fale h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+
+/* FORMULÁRIO */
+
+.form-fale{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-fale label{
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* inputs iguais */
+.form-fale input,
+.form-fale textarea{
+    width: 100%;
+    background: #ffffff; 
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.form-fale textarea{
+    height: 120px;
+    resize: vertical;
+}
+
+
+/* BOTÃO */
+
+.form-fale button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #0060ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-fale button:hover{
+    background: #0049be;
+}
+
+

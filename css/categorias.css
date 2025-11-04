@@ -1,0 +1,67 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* TÍTULO */
+h3 {
+  text-align: center;
+  margin-top: 60px;  
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #222;
+}
+
+/* CONTAINER DA TABELA */
+.table-wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 0px;
+  overflow-x: auto;
+}
+
+/* TABELA */
+.tabela-categorias {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+.tabela-categorias th,
+.tabela-categorias td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+/* Coluna de ID */
+.tabela-categorias td:first-child,
+.tabela-categorias th:first-child {
+  text-align: center;
+  width: 60px;
+}
+
+
+.tabela-categorias th {
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+
+.tabela-categorias tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabela-categorias tr:hover {
+  background-color: #f1f1f1;
+}

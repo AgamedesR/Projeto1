@@ -1,0 +1,155 @@
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS DO MENU */
+a {
+  color: #fff; /* cor branca */
+  text-decoration: none; /* sem sublinhado */
+  transition: 0.3s; /* animação suave */
+}
+
+a:hover {
+  opacity: 0.7; /* efeito ao passar o mouse */
+}
+
+/* LOGO "HomeNet" */
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* Imagem Logo em .logo */
+.logo img {
+  height: 100px; /* controls logo height - adjust as needed */
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Mantenha o texto para acessibilidade, mas oculte visualmente */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* BARRA DE NAVEGAÇÃO PRINCIPAL — VERSÃO AJUSTADA */
+nav {
+  display: flex; /* organiza logo e menu lado a lado */
+  justify-content: space-around; /* espaçamento entre logo e menu */
+  align-items: center; /* centraliza verticalmente */
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 70%, rgba(33, 33, 33, 1) 100%);
+  box-shadow: 0 4px 8px rgba(30, 30, 30, 0.2); /* sombra sutil */
+  padding: 10px 0; /* espaçamento interno */
+  height: auto; /* ajusta conforme o conteúdo */
+  margin: 0; /* elimina qualquer margem externa */
+  position: relative; /* mantém contexto para elementos internos */
+  z-index: 1000; /* garante que fique acima de outros elementos */
+}
+
+/* CONTEÚDO PRINCIPAL (abaixo do menu) */
+main {
+  background: url("jp imagem") no-repeat center center; /* imagem de fundo */
+  background-size: cover; /* cobre toda a tela */
+  height: 92vh; /* completa o restante da tela */
+}
+
+/* LISTA DE LINKS DO MENU */
+.nav-list {
+  list-style: none; /* remove marcadores da lista */
+  display: flex; /* exibe os links na horizontal */
+}
+
+.nav-list li {
+  letter-spacing: 3px; /* espaçamento entre letras */
+  margin-left: 32px; /* distância entre itens */
+}
+
+/* MENU MOBILE (ÍCONE 3 TRAÇOS) */
+.mobile-menu {
+  display: none; /* escondido no desktop */
+  cursor: pointer; /* mostra o cursor de clique */
+}
+
+/* LINHAS DO ÍCONE (3 TRAÇOS) */
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff; /* cor das linhas */
+  margin: 8px;
+  transition: 0.3s; /* animação suave ao clicar */
+}
+
+
+/*  RESPONSIVIDADE (TELAS PEQUENAS) */
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden; /* evita rolagem lateral */
+  }
+
+  /* MENU DESLIZANTE (FECHADO POR PADRÃO) */
+  .nav-list {
+    position: absolute;
+    top: 8vh; /* começa abaixo da navbar */
+    right: 0;
+    width: 50vw; /* ocupa metade da tela */
+    height: 92vh; /* cobre o restante da altura */
+    background: #23232e;
+    flex-direction: column; /* empilha os links */
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%); /* escondido à direita */
+    transition: transform 0.3s ease-in; /* deslize suave */
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0; /* começa invisível (JS vai animar) */
+  }
+
+  .mobile-menu {
+    display: block; /* mostra o ícone hambúrguer */
+  }
+}
+
+/* MENU ATIVO (ABERTO PELO JS) */
+.nav-list.active {
+  transform: translateX(0); /* traz o menu pra dentro da tela */
+}
+
+/* ANIMAÇÃO DOS LINKS (controlada pelo JS) */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px); /* começa deslocado */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* posição normal */
+  }
+}
+
+/* ÍCONE HAMBÚRGUER ANIMADO (vira um X) */
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0; /* linha do meio desaparece */
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+

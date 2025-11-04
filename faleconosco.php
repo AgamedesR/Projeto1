@@ -3,7 +3,7 @@
 
 <main class="container-fale">
     <h1>Fale Conosco</h1>
-    <form action="enviar.php" method="post" class="form-fale">
+    <form action="obrigado.php" method="post" class="form-fale">
         <label>Nome:</label>
         <input type="text" name="nome" required>
 

@@ -6,17 +6,15 @@
 # Clientes (criada em sala)
 
 # Categorias
-CREATE TABLE `categorias` (
-  `id` int(11) NOT NULL,
-  `bairro` varchar(100) NOT NULL,
-  `tamanho` varchar(50) NOT NULL
-)
-
-INSERT INTO `categorias` (`id`, `bairro`, `tamanho`) VALUES
-(1, 'Tambaú', 'Até 100 m²'),
-(2, 'Tambaú', 'Até 200 m²'),
-(3, 'Manaíra', 'Até 300 m²'),
-(4, 'Bessa', 'Acima de 300 m²'),
-(5, 'Cabo Branco', 'Até 200 m²'),
-(6, ' Bancários', 'Até 100m²'),
-(7, 'Aeroclube', 'Até 100m²');
+CREATE TABLE categorias (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  bairro VARCHAR(100) NOT NULL,
+  tamanho VARCHAR(50) NOT NULL
+);
+    
+INSERT INTO categorias (bairro, tamanho) VALUES
+('Tambaú', 'Até 100 m²'),
+('Tambaú', 'Até 200 m²'),
+('Manaíra', 'Até 300 m²'),
+('Bessa', 'Acima de 300 m²'),
+('Cabo Branco', 'Até 200 m²');

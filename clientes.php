@@ -29,6 +29,4 @@ if (mysqli_num_rows($resultado) > 0) {
 } else {
     echo "<h3>Nenhum Cliente cadastrado.</h3>";
 }
-
-include "rodape/rodape.php";
-?>
+include "rodape/rodape.php";?>

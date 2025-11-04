@@ -1,6 +1,7 @@
-<?php
-    include "topo/topo.php";
+<?php include "topo/topo.php";?>
 
-    echo "<h2>Conteúdo do site.</h2>";
+    <main>
+        <h2>Conteúdo do site.</h2>
+    </main>
 
-    include "rodape/rodape.php";
+<?php include "rodape/rodape.php";?>

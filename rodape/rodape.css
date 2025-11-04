@@ -1,10 +1,7 @@
-/* ===== RODAPÉ ===== */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #222;
-  color: white;
-  margin-top: 100px;     /* distância acima do rodapé */
-  margin-bottom: 10px;  /* distância abaixo do rodapé */
-  font-size: 14px;
+    text-align: center;
+    padding: 20px ;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
 }
